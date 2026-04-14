@@ -26,8 +26,8 @@
             <img src="img/logo.png" alt="DML Autoservice" class="h-16 md:h-28 w-auto object-contain">
         </a>
 
-        <button id="menu-btn" class="md:hidden text-white focus:outline-none p-2">
-            <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none p-2" aria-label="Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
         </button>
@@ -41,12 +41,12 @@
         </nav>
     </div>
 
-    <div id="mobile-menu" class="hidden md:hidden bg-dark border-b border-white/5 px-6 py-4 space-y-3">
-        <a href="#services" class="block text-lg font-black uppercase italic text-white hover:text-accent transition">Diensten</a>
-        <a href="#transport" class="block text-lg font-black uppercase italic text-white hover:text-accent transition">Transport</a>
-        <a href="#work" class="block text-lg font-black uppercase italic text-white hover:text-accent transition">Ons werk</a>
-        <a href="#about" class="block text-lg font-black uppercase italic text-white hover:text-accent transition">over mij</a>
-        <a href="#contact" class="block text-lg font-black uppercase italic text-accent">Contact</a>
+    <div id="mobile-menu" class="hidden md:hidden bg-dark border-b border-white/5 px-6 py-6 flex flex-col gap-4">
+        <a href="#services" class="text-lg font-black uppercase italic text-white hover:text-accent transition">Diensten</a>
+        <a href="#transport" class="text-lg font-black uppercase italic text-white hover:text-accent transition">Transport</a>
+        <a href="#work" class="text-lg font-black uppercase italic text-white hover:text-accent transition">Ons werk</a>
+        <a href="#about" class="text-lg font-black uppercase italic text-white hover:text-accent transition">over mij</a>
+        <a href="#contact" class="text-lg font-black uppercase italic text-accent transition">Contact</a>
     </div>
 </header>
 
