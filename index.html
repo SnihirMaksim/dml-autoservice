@@ -342,21 +342,16 @@
 <script>
     const btn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
-    const icon = document.getElementById('menu-icon');
 
     if(btn && menu) {
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
-            // Анімація: іконка трохи повертається при натисканні
-            icon.style.transform = menu.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(90deg)';
         });
 
-        // Закривати меню при кліку на посилання
         const links = menu.querySelectorAll('a');
         links.forEach(link => {
             link.addEventListener('click', () => {
                 menu.classList.add('hidden');
-                icon.style.transform = 'rotate(0deg)';
             });
         });
     }
