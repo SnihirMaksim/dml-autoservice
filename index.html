@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DML Autoservice | Dylan van den Berge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { dark: '#0B0F1A', card: '#161B28', accent: '#3B82F6' },
+                    fontFamily: { sans: ['DM Sans', 'sans-serif'], display: ['Lexend', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark font-sans text-gray-300">
+
+    <header class="fixed w-full z-50 py-4" id="main-header">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="relative flex justify-between items-center bg-card/80 backdrop-blur-xl border border-white/5 px-8 h-24 rounded-[2rem] shadow-2xl">
+                <div class="flex items-center">
+                    <a href="#home" class="flex items-center group">
+                        <div class="absolute top-1/2 -translate-y-1/2 left-8 transition-transform duration-500 group-hover:scale-110">
+                            <img src="img/logo.png" class="h-34 w-auto block object-contain" alt="DML Logo">
+                        </div>
+                        <div class="flex flex-col ml-44">
+                            <span class="font-display text-4xl font-black text-white tracking-tighter uppercase leading-none">DML</span>
+                            <span class="text-[12px] tracking-[0.5em] text-accent font-bold uppercase mt-2">Autoservice</span>
+                        </div>
+                    </a>
+                </div>
+                <nav class="hidden md:flex items-center gap-10">
+    <a href="#services" class="text-sm font-black uppercase italic text-white hover:text-accent transition">Diensten</a>
+    <a href="#transport" class="text-sm font-black uppercase italic text-white hover:text-accent transition">Transport</a>
+    <a href="#work" class="text-sm font-black uppercase italic text-white hover:text-accent transition">Ons werk</a>
+    <a href="#about" class="text-sm font-black uppercase italic text-white hover:text-accent transition">Wie ben ik?</a>
+    <a href="#contact" class="text-sm font-black uppercase italic text-accent hover:text-white transition">Contact</a>
+</nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative pt-64 pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <h1 class="font-display text-6xl md:text-8xl font-black text-white leading-[0.9] mb-8 uppercase italic">
+                        Een eerlijke garage <span class="text-accent">voor de beste prijs</span>
+                    </h1>
+                    <p class="text-gray-400 text-lg mb-10 max-w-md border-l-2 border-accent/30 pl-8">
+                        bent u opzoek naar een betrouwbare en eerlijke garage voor professionele auto-onderhoudsdiensten tegen eerlijke prijzen. Onze goed opgeleide monteur heeft uitgebreide ervaring in het repareren van alle soorten voertuigen. Of het nu gaat om kleine reparaties of uitgebreid onderhoud, wij bieden een persoonlijke aanpak en staan altijd klaar om uw vragen te beantwoorden en deskundig advies te geven. Ontdek de kwaliteit van onze service en maak de juiste keuze voor uw auto!
+                    </p>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl">
+                        <img src="img/logo2.jpg" class="w-full h-auto" alt="DML Workshop">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <section id="about" class="py-24 bg-card border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-20">
+                <div class="lg:w-1/2 group">
+                    <div class="relative rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl">
+                        <img src="img/Transport.jpg" class="w-full h-auto block transition duration-700 group-hover:scale-105" alt="Dylan van den Berge">
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="font-display text-4xl font-black text-white uppercase italic mb-8 italic">DML <span class="text-accent">Autoservice breidt uit</span></h2>
+                    <div class="space-y-6 text-gray-400 text-lg leading-relaxed">
+                        <p>uit <span class="text-white font-bold">DML Autoservice breidt uit❗</span></p>
+                        <p>Vanaf nu kun je bij ons ook terecht voor transportdiensten. Naast onze vertrouwde diensten zoals APK, onderhoud en reparaties, zijn we er nu ook voor al je transportvragen. Of het nu gaat om het verplaatsen van een auto, hulp bij pech of andere transportbehoeften, wij staan voor je klaar voor een eerlijke prijs zoals jullie van ons gewend zijn!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-card border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-20">
+                <div class="lg:w-1/2 group">
+                    <div class="relative rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl">
+                        <img src="img/information.png" class="w-full h-auto block transition duration-700 group-hover:scale-105" alt="Dylan van den Berge">
+                        <div class="absolute bottom-6 left-6 bg-accent px-6 py-2 rounded-lg font-black text-white italic">Sinds 2014</div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="font-display text-4xl font-black text-white uppercase italic mb-8 italic">Wie ben <span class="text-accent">ik?</span></h2>
+                    <div class="space-y-6 text-gray-400 text-lg leading-relaxed">
+                        <p>Ik, <span class="text-white font-bold">Dylan van den Berge</span>, werk momenteel al sinds 2014 met auto's. Vanuit die passie kwam mijn droom om een eigen garage te hebben, en dit is nu werkelijkheid geworden.</p>
+                        <p>Bent u op zoek naar een betrouwbare en eerlijke garage voor professionele auto-onderhoudsdiensten tegen eerlijke prijzen? Dan bent u bij ons aan het juiste adres.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="transport" class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-16 items-center">
+            <div class="lg:w-1/2">
+                <div class="inline-block bg-accent/20 text-accent px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-6">Nieuwe Dienst</div>
+                <h2 class="font-display text-4xl font-black text-white uppercase italic mb-8"> Noodgeval <span class="text-accent">tussen werktijden?</span></h2>
+                <p class="text-gray-400 text-lg mb-8 leading-relaxed text-balance">
+                    Twijfel niet en bel gerust, dan kijken we samen naar een passende oplossing voor uw probleem.
+                </p>
+                <div class="bg-card p-6 rounded-2xl border border-white/5 inline-block">
+                    <span class="block text-xs text-gray-500 uppercase font-bold mb-2 tracking-widest">Bel direct:</span>
+                    <a href="tel:0613405634" class="text-2xl font-black text-white hover:text-accent transition-colors select-all">
+                        06 13405634
+                    </a>
+                </div>
+            </div>
+            <div class="lg:w-1/2">
+                <div class="rounded-[2.5rem] overflow-hidden border border-white/5 shadow-2xl">
+                    <img src="img/8.jpg" class="w-full h-auto" alt="Auto Ambulance">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="services" class="py-24 bg-card">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="font-display text-4xl font-black text-white uppercase italic mb-16 italic">Onze <span class="text-accent">Diensten</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                
+                <div class="service-card group relative bg-dark rounded-[3rem] overflow-hidden border border-white/5 text-left transition-all duration-500 hover:border-accent/50 hover:-translate-y-3 shadow-2xl">
+                    <div class="h-[500px] overflow-hidden relative">
+                        <img src="img/diagnostic.jpg" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-700" alt="APK">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/40 to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-0 p-10 w-full">
+                        <h3 class="text-2xl font-black text-white uppercase italic mb-3 text-accent leading-none tracking-tighter">apk en diagnose</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed max-w-md">Wij verzorgen ook APK-keuringen voor zowel benzine- als dieselauto’s. Onze deskundige monteur zorgt ervoor dat jouw voertuig aan alle wettelijke eisen voldoet.</p>
+                    </div>
+                </div>
+
+                <div class="service-card group relative bg-dark rounded-[3rem] overflow-hidden border border-white/5 text-left transition-all duration-500 hover:border-accent/50 hover:-translate-y-3 shadow-2xl">
+                    <div class="h-[500px] overflow-hidden relative">
+                        <img src="img/4.jpg" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-700" alt="Onderhoud">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/40 to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-0 p-10 w-full">
+                        <h3 class="text-2xl font-black text-white uppercase italic mb-3 text-accent leading-none tracking-tighter">Alle soorten reparaties</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed max-w-md">Er is bijna niets te gek voor ons! Van kleine fixes tot grotere reparaties, we staan voor je klaar. Jouw auto, onze zorg.</p>
+                    </div>
+                </div>
+
+                <div class="service-card group relative bg-dark rounded-[3rem] overflow-hidden border border-white/5 text-left transition-all duration-500 hover:border-accent/50 hover:-translate-y-3 shadow-2xl">
+                    <div class="h-[500px] overflow-hidden relative">
+                        <img src="img/outsideview.jpg" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-700" alt="Transport">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/40 to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-0 p-10 w-full">
+                        <h3 class="text-2xl font-black text-white uppercase italic mb-3 text-accent leading-none tracking-tighter">Transport</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed max-w-md">Vanaf heden beschikken wij ook over een luxe auto ambulance, hiermee kunnen wij het transport van uw voertuig verzorgen.</p>
+                    </div>
+                </div>
+
+                <div class="service-card group relative bg-dark rounded-[3rem] overflow-hidden border border-white/5 text-left transition-all duration-500 hover:border-accent/50 hover:-translate-y-3 shadow-2xl">
+                    <div class="h-[500px] overflow-hidden relative">
+                        <img src="img/Banden controleren en vervanging.jpg" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-700" alt="Banden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/40 to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-0 p-10 w-full">
+                        <h3 class="text-2xl font-black text-white uppercase italic mb-3 text-accent leading-none tracking-tighter">Banden service</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed max-w-md">Of het nu gaat om het vervangen van winter- of zomerbanden, onderhoud, of deskundig advies, wij hebben het allemaal.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+   <section id="work" class="py-32 bg-dark relative overflow-hidden">
+        <div class="absolute -top-40 -right-40 w-80 h-80 bg-accent/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <h2 class="font-display text-5xl md:text-6xl font-black text-white uppercase italic mb-6 leading-none tracking-tighter">
+                Ons <span class="text-accent">werk</span>
+            </h2>
+            <p class="text-gray-500 max-w-2xl mx-auto text-lg mb-20">
+                Een selectie van onze recente projecten. Wij streven naar perfectie in elk detail.
+            </p>
+            
+            <div class="space-y-6 md:space-y-10">
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
+                    <div class="relative group md:col-span-2 aspect-[16/9] overflow-hidden rounded-[2.5rem] border border-white/5 bg-card shadow-2xl transition-all duration-500 hover:border-accent/30">
+                        <img src="img/1.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="DML Work 1">
+                    </div>
+                    <div class="relative group aspect-square md:aspect-auto overflow-hidden rounded-[2.5rem] border border-white/5 bg-card shadow-lg">
+                        <img src="img/2.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="DML Work 2">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-10">
+                    <div class="relative group aspect-square overflow-hidden rounded-[2.5rem] border border-white/5 bg-card">
+                        <img src="img/3.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="DML Work 3">
+                    </div>
+                    <div class="relative group aspect-square overflow-hidden rounded-[2.5rem] border border-white/5 bg-card">
+                        <img src="img/4.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="DML Work 4">
+                    </div>
+                    <div class="relative group aspect-square overflow-hidden rounded-[2.5rem] border border-white/5 bg-card col-span-2 md:col-span-1">
+                        <img src="img/5.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="DML Work 5">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
+                    <div class="relative group aspect-square md:aspect-auto overflow-hidden rounded-[2.5rem] border border-white/5 bg-card shadow-lg">
+                        <img src="img/6.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="DML Work 6">
+                    </div>
+                    <div class="relative group md:col-span-2 aspect-[16/9] overflow-hidden rounded-[2.5rem] border border-white/5 bg-card shadow-2xl transition-all duration-500 hover:border-accent/30">
+                        <img src="img/7.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="DML Work 7">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
+                    <div class="relative group aspect-square overflow-hidden rounded-[2.5rem] border border-white/5 bg-card hover:-translate-y-2 transition-transform duration-500">
+                        <img src="img/8.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="DML Work 8">
+                    </div>
+                    <div class="relative group aspect-square overflow-hidden rounded-[2.5rem] border border-white/5 bg-card hover:-translate-y-2 transition-transform duration-500">
+                        <img src="img/9.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="DML Work 9">
+                    </div>
+                    <div class="relative group aspect-square overflow-hidden rounded-[2.5rem] border border-white/5 bg-card hover:-translate-y-2 transition-transform duration-500">
+                        <img src="img/10.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="DML Work 10">
+                    </div>
+                    <div class="relative group aspect-square overflow-hidden rounded-[2.5rem] border border-white/5 bg-card hover:-translate-y-2 transition-transform duration-500">
+                        <img src="img/11.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="DML Work 11">
+                    </div>
+                </div>
+
+                <div class="relative group aspect-[21/9] overflow-hidden rounded-[3rem] border border-white/5 bg-card shadow-2xl transition-all duration-500 hover:border-accent/30">
+                    <img src="img/12.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="DML Work 12">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-8 left-8 md:bottom-12 md:left-12 text-left">
+                        <p class="text-white font-black uppercase italic tracking-tighter text-2xl md:text-4xl leading-none">Perfectie in <span class="text-accent">elk detail</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-dark relative overflow-hidden">
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-accent/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="bg-card rounded-[3rem] border border-white/5 overflow-hidden shadow-2xl">
+                <div class="flex flex-col lg:flex-row">
+                    
+                    <div class="lg:w-1/2 p-12 md:p-20">
+                        <div class="inline-block bg-accent/20 text-accent px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-8">
+                            Neem contact op
+                        </div>
+                        <h2 class="font-display text-4xl md:text-5xl font-black text-white uppercase italic mb-8 leading-none">
+                            Klaar voor de volgende <span class="text-accent">onderhoud?</span>
+                        </h2>
+                        <p class="text-gray-400 text-lg mb-12">
+                            Heeft u vragen over transport, APK або reparaties? Wij staan voor u klaar met eerlijk advies en vakmanschap.
+                        </p>
+
+                        <div class="space-y-8">
+                            <div class="flex items-center gap-6 group">
+                                <div class="w-14 h-14 bg-dark rounded-2xl flex items-center justify-center border border-white/5 text-accent group-hover:border-accent/50 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="block text-[10px] text-gray-500 uppercase font-black tracking-widest mb-1">E-mail ons</span>
+                                    <a href="mailto:info@dmlautoservice.nl" class="text-xl font-bold text-white hover:text-accent transition-all italic">
+                                        info@dmlautoservice.nl
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-6 group">
+                                <div class="w-14 h-14 bg-dark rounded-2xl flex items-center justify-center border border-white/5 text-accent group-hover:border-accent/50 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="block text-[10px] text-gray-500 uppercase font-black tracking-widest mb-1">Bel direct</span>
+                                    <a href="tel:0613405634" class="text-xl font-bold text-white hover:text-accent transition-all italic">
+                                        06 13405634
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-6 group">
+                                <div class="w-14 h-14 bg-dark rounded-2xl flex items-center justify-center border border-white/5 text-accent group-hover:border-accent/50 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="block text-[10px] text-gray-500 uppercase font-black tracking-widest mb-1">Bezoek ons</span>
+                                    <p class="text-xl font-bold text-white italic">
+                                        Sluisweg 2, 4421 RK Kapelle
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/2 relative min-h-[400px]">
+                        <img src="img/outsideview.jpg" class="absolute inset-0 w-full h-full object-cover" alt="DML Location">
+                        <div class="absolute inset-0 bg-gradient-to-r from-card via-transparent to-transparent"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-600 text-sm">
+                <p>© 2026 DML Autoservice. Alle rechten voorbehouden.</p>
+                <div class="flex gap-8">
+                    <a href="#" class="hover:text-accent transition">Algemene Voorwaarden</a>
+                    <a href="#" class="hover:text-accent transition">Privacybeleid</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
