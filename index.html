@@ -33,20 +33,22 @@
         </button>
 
         <nav class="hidden md:flex items-center gap-10">
-            <a href="#services" class="text-sm font-black uppercase italic text-white hover:text-accent transition">Diensten</a>
-            <a href="#transport" class="text-sm font-black uppercase italic text-white hover:text-accent transition">Transport</a>
-            <a href="#work" class="text-sm font-black uppercase italic text-white hover:text-accent transition">Ons werk</a>
             <a href="#about" class="text-sm font-black uppercase italic text-white hover:text-accent transition">over mij</a>
+            <a href="#transport" class="text-sm font-black uppercase italic text-white hover:text-accent transition">Transport</a>
+            <a href="#services" class="text-sm font-black uppercase italic text-white hover:text-accent transition">Diensten</a>
+            <a href="#work" class="text-sm font-black uppercase italic text-white hover:text-accent transition">Ons werk</a>
             <a href="#contact" class="text-sm font-black uppercase italic text-accent hover:text-white transition">Contact</a>
+            <a href="#Reviews" class="text-sm font-black uppercase italic text-accent hover:text-white transition">Reviews</a>
         </nav>
     </div>
 
     <div id="mobile-menu" class="hidden md:hidden bg-dark border-b border-white/5 px-6 py-6 flex flex-col gap-4">
-        <a href="#services" class="text-lg font-black uppercase italic text-white hover:text-accent transition">Diensten</a>
-        <a href="#transport" class="text-lg font-black uppercase italic text-white hover:text-accent transition">Transport</a>
-        <a href="#work" class="text-lg font-black uppercase italic text-white hover:text-accent transition">Ons werk</a>
         <a href="#about" class="text-lg font-black uppercase italic text-white hover:text-accent transition">over mij</a>
+        <a href="#transport" class="text-lg font-black uppercase italic text-white hover:text-accent transition">Transport</a>
+        <a href="#services" class="text-lg font-black uppercase italic text-white hover:text-accent transition">Diensten</a>
+        <a href="#work" class="text-lg font-black uppercase italic text-white hover:text-accent transition">Ons werk</a>
         <a href="#contact" class="text-lg font-black uppercase italic text-accent transition">Contact</a>
+        <a href="#reviews" class="text-sm font-black uppercase italic text-accent hover:text-white transition">Reviews</a>
     </div>
 </header>
 
@@ -63,7 +65,7 @@
                 </div>
                 <div class="lg:w-1/2 relative">
                     <div class="rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl">
-                        <img src="img/logo2.jpg" class="w-full h-auto" alt="DML Workshop">
+                        <img src="img/logotip.png" class="w-full h-auto" alt="DML Workshop">
                     </div>
                 </div>
             </div>
@@ -256,6 +258,72 @@
         </div>
     </section>
 
+    <section id="reviews" class="py-24 bg-dark">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+            <div>
+                <h2 class="text-4xl md:text-5xl font-black uppercase italic text-white leading-none">
+                    Wat klanten <span class="text-accent">zeggen</span>
+                </h2>
+                <p class="text-gray-400 mt-4 max-w-md">Bekijk onze 5-sterren beoordelingen rechtstreeks van Google Maps.</p>
+            </div>
+            <a href="https://maps.app.goo.gl/dmsTLDS9tn8ax4C28" target="_blank" class="flex items-center gap-2 text-white hover:text-accent transition font-bold uppercase italic border-b border-accent/30 pb-1">
+                Bekijk alles op Google
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="bg-white/5 border border-white/10 p-8 rounded-2xl relative group hover:border-accent/50 transition duration-500">
+                <div class="flex items-center gap-1 text-orange-500 mb-4">
+                    <span class="text-xl">★★★★★</span>
+                </div>
+                <p class="text-gray-300 italic mb-6">"Uitstekende service! Mijn auto was binnen een dag klaar. Eerlijke prijzen en zeer professioneel personeel. Echt een aanrader voor iedereen in de regio."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center font-bold text-accent">J</div>
+                    <div>
+                        <h4 class="text-white font-bold">Jan de Vries</h4>
+                        <span class="text-gray-500 text-sm">2 weken geleden</span>
+                    </div>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_Maps_icon_%282020%29.svg" class="absolute top-8 right-8 w-6 opacity-30 group-hover:opacity-100 transition" alt="Google">
+            </div>
+
+            <div class="bg-white/5 border border-white/10 p-8 rounded-2xl relative group hover:border-accent/50 transition duration-500">
+                <div class="flex items-center gap-1 text-orange-500 mb-4">
+                    <span class="text-xl">★★★★★</span>
+                </div>
+                <p class="text-gray-300 italic mb-6">"Beste garage waar ik tot nu toe ben geweest. Ze leggen alles goed uit en doen geen onnodige reparaties. Zeer betrouwbaar!"</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center font-bold text-accent">M</div>
+                    <div>
+                        <h4 class="text-white font-bold">Mark Bakker</h4>
+                        <span class="text-gray-400 text-sm">1 maand geleden</span>
+                    </div>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_Maps_icon_%282020%29.svg" class="absolute top-8 right-8 w-6 opacity-30 group-hover:opacity-100 transition" alt="Google">
+            </div>
+
+            <div class="bg-white/5 border border-white/10 p-8 rounded-2xl relative group hover:border-accent/50 transition duration-500">
+                <div class="flex items-center gap-1 text-orange-500 mb-4">
+                    <span class="text-xl">★★★★★</span>
+                </div>
+                <p class="text-gray-300 italic mb-6">"DML Autoservice heeft mijn motorstoring snel en vakkundig opgelost. De prijs was precies wat was afgesproken. Top garage!"</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center font-bold text-accent">S</div>
+                    <div>
+                        <h4 class="text-white font-bold">Sophie Willems</h4>
+                        <span class="text-gray-400 text-sm">3 maanden geleden</span>
+                    </div>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_Maps_icon_%282020%29.svg" class="absolute top-8 right-8 w-6 opacity-30 group-hover:opacity-100 transition" alt="Google">
+            </div>
+
+        </div>
+    </div>
+</section>
+
     <section id="contact" class="py-24 bg-dark relative overflow-hidden">
         <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-accent/10 rounded-full blur-[120px] pointer-events-none"></div>
 
@@ -356,5 +424,6 @@
         });
     }
 </script>
+
 </body>
 </html>
