@@ -3,46 +3,53 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Управління хедером при скролі
     const header = document.getElementById('main-header');
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.querySelector('div > div').classList.add('py-2', 'bg-card/95');
-            header.querySelector('div > div').classList.remove('py-4', 'bg-card/80');
+        if (header && window.scrollY > 50) {
             header.classList.add('shadow-2xl');
-        } else {
-            header.querySelector('div > div').classList.add('py-4', 'bg-card/80');
-            header.querySelector('div > div').classList.remove('py-2', 'bg-card/95');
+            // Змінюємо прозорість фону при скролі
+            header.classList.replace('bg-dark/80', 'bg-dark/95');
+        } else if (header) {
             header.classList.remove('shadow-2xl');
+            header.classList.replace('bg-dark/95', 'bg-dark/80');
         }
     });
 
-    // 2. Анімація появи елементів (Reveal on Scroll)
+    // 2. Управління мобільним меню (ДОДАНО)
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Закриваємо меню після натискання на посилання
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    }
+
+    // 3. Анімація появи елементів
     const revealElements = () => {
         const reveals = document.querySelectorAll('.service-card, section h2, #about img, .border-l-2');
-        
         reveals.forEach(el => {
             const windowHeight = window.innerHeight;
             const elementTop = el.getBoundingClientRect().top;
-            const elementVisible = 150;
-
-            if (elementTop < windowHeight - elementVisible) {
+            if (elementTop < windowHeight - 150) {
                 el.classList.add('active');
             }
         });
     };
-
-    // Додаємо клас reveal всім потрібним елементам
-    document.querySelectorAll('.service-card, section h2, #about img, .border-l-2').forEach(el => {
-        el.classList.add('reveal');
-    });
-
     window.addEventListener('scroll', revealElements);
-    revealElements(); // Запуск при першому завантаженні
+    revealElements();
 
-    // 3. Анімовані лічильники (наприклад, для досвіду "15+")
+    // 4. Анімовані лічильники
     const counters = document.querySelectorAll('.font-black.text-white');
     const runCounters = () => {
         counters.forEach(counter => {
             const text = counter.innerText;
-            if (text.includes('+') || text.includes('%')) {
+            if ((text.includes('+') || text.includes('%')) && !counter.dataset.started) {
                 const target = parseInt(text);
                 let count = 0;
                 const speed = 2000 / target;
@@ -55,26 +62,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 };
                 
-                // Запускаємо, коли елемент у полі зору
                 const rect = counter.getBoundingClientRect();
-                if (rect.top < window.innerHeight && !counter.dataset.started) {
+                if (rect.top < window.innerHeight) {
                     counter.dataset.started = true;
                     updateCount();
                 }
             }
         });
     };
-
     window.addEventListener('scroll', runCounters);
     runCounters();
 
-    // 4. Логіка для кнопок (ефект кліку)
+    // 5. Ефект кліку на посилання
     document.querySelectorAll('a').forEach(anchor => {
-        anchor.addEventListener('mousedown', function() {
-            this.style.transform = "scale(0.95)";
-        });
-        anchor.addEventListener('mouseup', function() {
-            this.style.transform = "scale(1)";
-        });
+        anchor.addEventListener('mousedown', function() { this.style.transform = "scale(0.95)"; });
+        anchor.addEventListener('mouseup', function() { this.style.transform = "scale(1)"; });
     });
 });

@@ -20,19 +20,19 @@
 </head>
 <body class="bg-dark font-sans text-gray-300">
 
-   <header class="fixed w-full z-50 bg-dark/80 backdrop-blur-md border-b border-white/5">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between relative">
+   <header id="main-header" class="fixed w-full z-50 bg-dark/80 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <a href="#" class="flex items-center">
             <img src="img/logo.png" alt="DML Autoservice" class="h-16 md:h-28 w-auto object-contain">
         </a>
 
-        <button id="menu-btn" class="md:hidden text-white p-2" aria-label="Menu">
+        <button id="menu-btn" class="md:hidden text-white p-2 hover:text-green-500 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
         </button>
 
-        <nav class="hidden md:flex items-center gap-10">
+        <nav class="hidden md:flex items-center gap-8">
             <a href="#about" class="text-sm font-black uppercase italic text-white hover:text-green-500 transition">Over ons</a>
             <a href="#transport" class="text-sm font-black uppercase italic text-white hover:text-green-500 transition">Transport</a>
             <a href="#services" class="text-sm font-black uppercase italic text-white hover:text-green-500 transition">Diensten</a>
@@ -43,15 +43,15 @@
         </nav>
     </div>
 
-    <div id="mobile-menu" class="hidden bg-dark border-t border-white/5 w-full">
-        <div class="flex flex-col px-6 py-8 gap-6">
-            <a href="#about" class="text-xl font-black uppercase italic text-white hover:text-green-500">Over ons</a>
-            <a href="#transport" class="text-xl font-black uppercase italic text-white hover:text-green-500">Transport</a>
-            <a href="#services" class="text-xl font-black uppercase italic text-white hover:text-green-500">Diensten</a>
-            <a href="#work" class="text-xl font-black uppercase italic text-white hover:text-green-500">Ons werk</a>
-            <a href="#reviews" class="text-xl font-black uppercase italic text-white hover:text-green-500">Reviews</a>
-            <a href="#openingstijden" class="text-xl font-black uppercase italic text-white hover:text-green-500">Openingstijden</a>
-            <a href="#contact" class="text-xl font-black uppercase italic text-white hover:text-green-500">Contact</a>
+    <div id="mobile-menu" class="hidden md:hidden bg-dark border-t border-white/5 w-full max-h-[calc(100vh-80px)] overflow-y-auto">
+        <div class="flex flex-col px-6 py-8 gap-5">
+            <a href="#about" class="text-xl font-black uppercase italic text-white hover:text-green-500 transition">Over ons</a>
+            <a href="#transport" class="text-xl font-black uppercase italic text-white hover:text-green-500 transition">Transport</a>
+            <a href="#services" class="text-xl font-black uppercase italic text-white hover:text-green-500 transition">Diensten</a>
+            <a href="#work" class="text-xl font-black uppercase italic text-white hover:text-green-500 transition">Ons werk</a>
+            <a href="#reviews" class="text-xl font-black uppercase italic text-white hover:text-green-500 transition">Reviews</a>
+            <a href="#openingstijden" class="text-xl font-black uppercase italic text-white hover:text-green-500 transition">Openingstijden</a>
+            <a href="#contact" class="text-xl font-black uppercase italic text-white hover:text-green-500 transition">Contact</a>
         </div>
     </div>
 </header>
