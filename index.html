@@ -26,7 +26,7 @@
             <img src="img/logo.png" alt="DML Autoservice" class="h-16 md:h-28 w-auto object-contain">
         </a>
 
-        <button id="menu-btn" class="md:hidden text-white p-2 hover:text-green-500 transition-colors">
+        <button id="mobile-menu-toggle" class="md:hidden text-white p-2 focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -43,17 +43,44 @@
         </nav>
     </div>
 
-    <div id="mobile-menu" class="hidden md:hidden bg-dark border-t border-white/5 w-full max-h-[calc(100vh-80px)] overflow-y-auto">
-        <div class="flex flex-col px-6 py-8 gap-5">
-            <a href="#about" class="text-xl font-black uppercase italic text-white hover:text-green-500 transition">Over ons</a>
-            <a href="#transport" class="text-xl font-black uppercase italic text-white hover:text-green-500 transition">Transport</a>
-            <a href="#services" class="text-xl font-black uppercase italic text-white hover:text-green-500 transition">Diensten</a>
-            <a href="#work" class="text-xl font-black uppercase italic text-white hover:text-green-500 transition">Ons werk</a>
-            <a href="#reviews" class="text-xl font-black uppercase italic text-white hover:text-green-500 transition">Reviews</a>
-            <a href="#openingstijden" class="text-xl font-black uppercase italic text-white hover:text-green-500 transition">Openingstijden</a>
-            <a href="#contact" class="text-xl font-black uppercase italic text-white hover:text-green-500 transition">Contact</a>
+    <div id="mobile-nav-panel" class="hidden bg-dark border-t border-white/5 w-full overflow-y-auto" style="max-height: calc(100vh - 80px);">
+        <div class="flex flex-col px-6 py-8 gap-6">
+            <a href="#about" class="mobile-link text-xl font-black uppercase italic text-white">Over ons</a>
+            <a href="#transport" class="mobile-link text-xl font-black uppercase italic text-white">Transport</a>
+            <a href="#services" class="mobile-link text-xl font-black uppercase italic text-white">Diensten</a>
+            <a href="#work" class="mobile-link text-xl font-black uppercase italic text-white">Ons werk</a>
+            <a href="#reviews" class="mobile-link text-xl font-black uppercase italic text-white">Reviews</a>
+            <a href="#openingstijden" class="mobile-link text-xl font-black uppercase italic text-white">Openingstijden</a>
+            <a href="#contact" class="mobile-link text-xl font-black uppercase italic text-white">Contact</a>
         </div>
     </div>
+
+    <script>
+        (function() {
+            const btn = document.getElementById('mobile-menu-toggle');
+            const menu = document.getElementById('mobile-nav-panel');
+            const links = document.querySelectorAll('.mobile-link');
+
+            if (btn && menu) {
+                btn.onclick = function() {
+                    if (menu.classList.contains('hidden')) {
+                        menu.classList.remove('hidden');
+                        menu.classList.add('flex');
+                    } else {
+                        menu.classList.add('hidden');
+                        menu.classList.remove('flex');
+                    }
+                };
+
+                links.forEach(link => {
+                    link.onclick = function() {
+                        menu.classList.add('hidden');
+                        menu.classList.remove('flex');
+                    };
+                });
+            }
+        })();
+    </script>
 </header>
 
     <section id="home" class="relative pt-64 pb-32 overflow-hidden">
